@@ -1,0 +1,2 @@
+{"jobs": [{"id": "x1", "title": "Software Engineer", "location": "New York", "isRemote": true, "jobUrl": "https://jobs.ashbyhq.com/acme/x1", "applyUrl": "https://jobs.ashbyhq.com/acme/x1/application", "descriptionPlain": "Distributed systems.", "publishedAt": "2026-09-30T00:00:00.000Z", "isListed": true},
+          {"id": "x2", "title": "Hidden", "location": "", "jobUrl": "", "isListed": false}]}

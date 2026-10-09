@@ -1,0 +1,12 @@
+<html><head><title>Apply - Acme</title></head><body>
+<form id="f" onsubmit="event.preventDefault(); document.body.innerHTML='<h1>Thank you for applying!</h1>';">
+  <label for="fn">First name</label><input id="fn" required>
+  <label for="ln">Last name</label><input id="ln" required>
+  <label for="em">Email</label><input id="em" type="email" required>
+  <label for="pw">Create a password</label><input id="pw" type="password" required>
+  <label for="auth">Are you legally authorized to work in the US?</label>
+  <select id="auth" required><option></option><option>Yes</option><option>No</option></select>
+  <label for="cv">Resume/CV</label><input id="cv" type="file">
+  <label><input type="checkbox" id="terms"> I agree to the privacy policy</label>
+  <button type="submit">Submit application</button>
+</form></body></html>

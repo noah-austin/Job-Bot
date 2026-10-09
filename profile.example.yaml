@@ -1,0 +1,48 @@
+# Copy to profile.yaml and fill in. Everything the bot says about you comes
+# from this file; anything not covered here goes to the review queue instead
+# of being guessed.
+
+personal:
+  first_name: Jane
+  last_name: Doe
+  email: jane@example.com          # personal email the bot applies with
+  phone: "+1 555 555 5555"
+  location: Austin, TX, USA
+  linkedin: https://linkedin.com/in/janedoe
+  github: https://github.com/janedoe
+  website: ""
+
+resume_path: data/resume.pdf
+# Facts the LLM may draw on when tailoring. Keep these true.
+resume_text: |
+  Paste a plain-text copy of your resume here.
+
+search:
+  titles: ["Software Engineer", "Backend Engineer"]
+  keywords: ["python", "distributed systems"]
+  exclude_keywords: ["clearance required", "unpaid"]
+  locations: ["Remote", "Austin"]
+  remote_ok: true
+  min_salary: 0
+  seniority: ["mid", "senior"]
+  # Companies to watch, by ATS. The slug is the part of the board URL,
+  # e.g. boards.greenhouse.io/<slug>, jobs.lever.co/<slug>, jobs.ashbyhq.com/<slug>
+  companies:
+    greenhouse: ["airbnb", "stripe"]
+    lever: ["netflix"]
+    ashby: ["ramp"]
+
+# Standard application questions. The bot answers only from here or from
+# facts in resume_text; anything else is escalated to you.
+answers:
+  work_authorization_us: "Yes"
+  requires_sponsorship: "No"
+  willing_to_relocate: "No"
+  earliest_start_date: "Two weeks after offer"
+  desired_salary: "Open to discussing based on the full compensation package"
+  how_did_you_hear: "Company careers page"
+  gender: "Decline to self-identify"
+  race_ethnicity: "Decline to self-identify"
+  veteran_status: "I am not a protected veteran"
+  disability_status: "I do not wish to answer"
+  pronouns: ""
