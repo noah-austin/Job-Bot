@@ -29,6 +29,11 @@ discover ──▶ score ──▶ apply (browser agent) ──▶ inbox ──�
 
 ## Setup
 
+> **This repository is public.** Your `profile.yaml`, resume, `.env` and everything in
+> `data/` (database, Gmail token, browser logins) are git-ignored. Keep them that way:
+> never commit them.
+
+
 ```bash
 pip install -e '.[dev]' && playwright install chromium
 cp .env.example .env              # fill in, then: set -a; source .env; set +a
